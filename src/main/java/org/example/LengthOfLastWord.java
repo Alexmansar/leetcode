@@ -10,8 +10,8 @@ public class LengthOfLastWord {
     public static void main(String[] args) {
         System.out.println(lengthOfLastWord("   fly me   to   the moon  "));
         System.out.println(lengthOfLastWord("Hello World"));
-        System.out.println(lengthOfLastWord("luffy is still joyboy"));
-        System.out.println(lengthOfLastWord("l22"));
+        System.out.println(lengthOfLastWord2("luffy is still joyboy"));
+        System.out.println(lengthOfLastWord2("l22"));
     }
 
     public static int lengthOfLastWord(String s) {
@@ -28,10 +28,8 @@ public class LengthOfLastWord {
         return count;
     }
 
-/*
-    public static int lengthOfLastWord(String s) {
+    public static int lengthOfLastWord2(String s) {
         return s.trim().length() - s.trim().lastIndexOf(" ") - 1;
     }
-*/
 
 }
